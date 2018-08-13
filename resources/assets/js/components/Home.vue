@@ -27,7 +27,7 @@
    </div>
    <ul>
      <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">
-       <h3 class="post-header"> <router-link :to="'/Description/'+ index">{{ post.newtitle }}</router-link></h3>
+       <h3 class="post-header"> <router-link :to="'/Description/'+ post.id">{{ post.newtitle }}</router-link></h3>
        <p class="post-text collapse"> {{ post.newpost }} </p>
        <p class="post-cat">{{ post.category.newcategory }}</p>
        <button class="btn btn-success"  @click="editpost(post)">Edit</button>

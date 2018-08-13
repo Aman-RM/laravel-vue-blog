@@ -52277,7 +52277,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { attrs: { to: "/Description/" + index } },
+                      { attrs: { to: "/Description/" + post.id } },
                       [_vm._v(_vm._s(post.newtitle))]
                     )
                   ],
@@ -52845,20 +52845,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "Description",
   data: function data() {
     return {
-      posts: []
+      post: ''
     };
   },
   mounted: function mounted() {
-    this.post();
-  },
-
-  methods: {
-    post: function post() {
-      var self = this;
-      axios.get("/post/" + this.$route.params.id).then(function (response) {
-        self.posts = response.data;
-      });
-    }
+    axios.get("/post/" + this.id).then(function (response) {
+      this.posts = response.data;
+    });
   }
 });
 

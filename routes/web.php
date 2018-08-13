@@ -33,7 +33,7 @@ Route::put('/editpost/{id}', 'PostsController@editpost');
 
 Route::delete('/category/{id}', 'PostsController@destroy');
 
-Route::get('/Description/{id}', 'PostsController@show');
+Route::get('/post/{id}', 'PostsController@show');
 
 
 

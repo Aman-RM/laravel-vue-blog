@@ -22,20 +22,14 @@ export default {
   name: "Description",
   data() {
     return {
-      posts: []
+      post:''
     };
   },
   mounted() {
-    this.post();
+    axios.get("/post/" + this.id).then(function(response) {
+      this.posts = response.data;
+    });
   },
-  methods: {
-    post() {
-      let self = this;
-      axios.get("/post/" + this.$route.params.id).then(function(response) {
-        self.posts = response.data;
-      });
-    }
-  }
 };
 </script>
 
