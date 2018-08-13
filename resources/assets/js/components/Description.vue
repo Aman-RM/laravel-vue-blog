@@ -28,10 +28,11 @@ export default {
   },
   mounted() {
     axios.get("/post/" + this.id).then(function(response) {
-       this.posts = response.data;
+       console.log(response)
+      this.posts = response.data;
     });
-  },
-}
+  }
+};
 </script>
 
 <style scoped>

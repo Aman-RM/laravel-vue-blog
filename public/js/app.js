@@ -51991,7 +51991,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       posts: [],
       newcategory: "",
       categories: [],
-      selectedCategory: 'All',
+      selectedCategory: "All",
       edit: false,
       post_id: ""
     };
@@ -52060,7 +52060,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     isShow: function isShow(cat) {
-      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
+      if (this.selectedCategory === "All" || this.selectedCategory === cat.newcategory) {
         return true;
       }
       return false;
@@ -52848,6 +52848,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   mounted: function mounted() {
     axios.get("/post/" + this.id).then(function (response) {
+      console.log(response);
       this.posts = response.data;
     });
   }

@@ -49,7 +49,7 @@ export default {
       posts: [],
       newcategory: "",
       categories: [],
-      selectedCategory: 'All',
+      selectedCategory: "All",
       edit: false,
       post_id: ""
     };
@@ -115,11 +115,14 @@ export default {
         self.categories = response.data;
       });
     },
-    isShow (cat) {
-      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
-        return true
+    isShow(cat) {
+      if (
+        this.selectedCategory === "All" ||
+        this.selectedCategory === cat.newcategory
+      ) {
+        return true;
       }
-      return false
+      return false;
     }
   }
 };
