@@ -2,10 +2,10 @@
 <div class="Categories">
  <div class="category">
  <button class="btn btn-primary" name="category" @click="selectedCategory = 'All'" value="All">All</button>
- <button id="catbtn" class="btn btn-primary" v-for="(cat,index) in categories" :key="index" :name="cat" @click="selectedCategory = cat" value="cat">{{cat.newcategory}}</button>
+ <button id="catbtn" class="btn btn-primary" v-for="(cat,index) in categories" :key="index" :name="cat" @click="selectedCategory = cat.newcategory" value="cat">{{cat.newcategory}}</button>
  </div>
    <ul>
-     <li class="title" v-for="(post,index) in posts" :key="index">
+     <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">
        <h3 class="post-header">{{ post.newtitle }}</h3>
        <p class="post-text">{{ post.newpost }}</p>
        <p class="post-text">{{ post.category.newcategory }}</p>
@@ -45,7 +45,12 @@ export default {
         function(response) {
         self.categories = response.data
         }
-      )
+      )},
+    isShow (cat) {
+      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
+        return true
+      }
+      return false
     }
   }
 }

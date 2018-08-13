@@ -16,7 +16,7 @@ import Description from './/components/Description.vue'
 
 Vue.use(VueRouter)
 
-const router = new VueRouter ({
+const router = new VueRouter({
     routes: [
         {
             path: "/",
@@ -39,7 +39,7 @@ const router = new VueRouter ({
                     path: "/contact",
                     component: Contact
                 },
-          ]    
+            ]
         },
         {
             path: "/login",
@@ -62,7 +62,8 @@ const router = new VueRouter ({
             component: cat
         },
         {
-            path: "/Description",
+            path: '/Description/:id',
+            name: 'Description',
             component: Description
         },
     ]

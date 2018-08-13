@@ -29,3 +29,11 @@ Route::get('/category', 'CategoryController@category');
 
 Route::delete('/post/{id}', 'PostsController@destroy');
 
+Route::put('/editpost/{id}', 'PostsController@editpost');
+
+Route::delete('/category/{id}', 'PostsController@destroy');
+
+Route::get('/Description/{id}', 'PostsController@show');
+
+
+

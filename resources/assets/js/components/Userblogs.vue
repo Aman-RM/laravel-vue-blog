@@ -3,13 +3,16 @@
     <nav class="navbar navbar-expand-lg float-md-left">
     <router-link to="/Home"><i class="fas fa-arrow-left"></i> Back</router-link>
     </nav>
-  <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
+    <br>
+    <div>
+       <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
+    </div>
 <div class="category">
   <button class="btn btn-primary" name="category" @click="selectedCategory = 'All'" value="All">All</button>
-  <button id="catbtn" class="btn btn-primary" v-for="(cat,index) in categories" :key="index" :name="cat" @click="selectedCategory = cat" value="cat">{{cat.newcategory}}</button>
+  <button id="catbtn" class="btn btn-primary" v-for="(cat,index) in categories" :key="index" :name="cat" @click="selectedCategory = cat.newcategory" value="cat">{{cat.newcategory}}</button>
 </div>
    <ul>
-     <li class="title" v-for="(post,index) in posts" :key="index">
+     <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">
        <h3 class="post-header">{{ post.newtitle }}</h3>
        <p class="post-text">{{ post.newpost }}</p>
        <p class="post-cat">{{ post.category.newcategory }}</p>
@@ -20,51 +23,54 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Userblogs',
-  data () {
+  name: "Userblogs",
+  data() {
     return {
-      selectedCategory: 'All',
+      selectedCategory: "All",
       posts: [],
       categories: []
-    }
+    };
   },
   mounted() {
-    this.post(),
-    this.category()
+    this.post(), this.category();
   },
   methods: {
-     post() {
-     let self = this
-     axios.get('/post').then(
-         function (response) {
-            self.posts = response.data
-          }
-      )
-   },
-   category() {
-      let self = this
-      axios.get('/category').then(
-        function(response) {
-        self.categories = response.data
-        }
-      )
+    post() {
+      let self = this;
+      axios.get("/post").then(function(response) {
+        self.posts = response.data;
+      });
+    },
+    category() {
+      let self = this;
+      axios.get("/category").then(function(response) {
+        self.categories = response.data;
+      });
+    },
+    isShow(cat) {
+      if (
+        this.selectedCategory === "All" ||
+        this.selectedCategory === cat.newcategory
+      ) {
+        return true;
+      }
+      return false;
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .Categories {
- background-repeat:no-repeat;
- background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
-    text-align: center;
-    font-family: cursive;
-    font-size: 400%;
-    color: white;
+  text-align: center;
+  font-family: cursive;
+  font-size: 400%;
+  color: white;
 }
 ul {
   margin-top: 5%;
@@ -86,8 +92,8 @@ li {
   text-indent: 30%;
 }
 .category {
-    margin-top: 5%;
-    margin-left: 20px;
+  margin-top: 5%;
+  margin-left: 20px;
 }
 .fab.fa-blogger-b {
   color: dodgerblue;
@@ -100,6 +106,6 @@ a {
   color: black;
 }
 .category .btn.btn-primary:not(:first-child) {
-margin-right: 4px;
+  margin-right: 4px;
 }
 </style>

@@ -32,4 +32,13 @@ class PostsController extends Controller
      return '';
 
   }
+  public function editpost(Request $request, $id)
+  {
+    $post = Post::find($id);
+    $post->newtitle = request('newtitle');
+    $post->newpost = request('newpost');
+    $post->save();
+
+    return $post;
+  }
 }

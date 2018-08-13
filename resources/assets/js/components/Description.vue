@@ -7,9 +7,9 @@
   <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
    <ul>
      <li class="title">
-       <h3 class="post-header">{{ post.title }}</h3>
-       <p class="post-text">{{ post.post }}</p>
-       <p class="post-cat">{{ post.category }}</p>
+       <h3 class="post-header">{{ post.newtitle }}</h3>
+       <p class="post-text">{{ post.newpost }}</p>
+       <p class="post-cat">{{ post.newcategory }}</p>
        <hr style="width:60%;background-color:dodgerblue">
     </li>
    </ul>
@@ -18,28 +18,37 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Description',
-  data () {
+  name: "Description",
+  data() {
     return {
-      post: ''
+      posts: []
+    };
+  },
+  mounted() {
+    this.post();
+  },
+  methods: {
+    post() {
+      let self = this;
+      axios.get("/post/" + this.$route.params.id).then(function(response) {
+        self.posts = response.data;
+      });
     }
   }
-}
-
+};
 </script>
 
 <style scoped>
 div {
- background-repeat:no-repeat;
- background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .blog {
   text-align: center;
   font-family: cursive;
   font-size: 400%;
-  color: white
+  color: white;
 }
 ul {
   margin-top: 5%;
@@ -71,7 +80,7 @@ a:hover {
   margin-top: 0;
 }
 .router-link-exact-active.router-link-active {
-    border-bottom: 3px solid dodgerblue;
+  border-bottom: 3px solid dodgerblue;
 }
 .tabs {
   padding: 15px;
@@ -81,11 +90,11 @@ a:hover {
   color: dodgerblue;
 }
 .category {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .post-text {
-    letter-spacing: 1px;
-    font-family: cursive;
-    text-indent: 30%;
+  letter-spacing: 1px;
+  font-family: cursive;
+  text-indent: 30%;
 }
 </style>

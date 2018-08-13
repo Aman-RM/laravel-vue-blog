@@ -21,4 +21,12 @@ class CategoryController extends Controller
      {
        return Category::all();
      }
+     public function destroy($id)
+  {
+  
+     Category::find($id)->delete();
+
+     return '';
+
+  }
 }

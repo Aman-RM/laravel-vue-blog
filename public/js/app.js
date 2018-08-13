@@ -48257,7 +48257,8 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
         path: "/cat",
         component: __WEBPACK_IMPORTED_MODULE_11__components_cat_vue___default.a
     }, {
-        path: "/Description",
+        path: '/Description/:id',
+        name: 'Description',
         component: __WEBPACK_IMPORTED_MODULE_12__components_Description_vue___default.a
     }]
 });
@@ -51018,6 +51019,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       axios.get('/category').then(function (response) {
         self.categories = response.data;
       });
+    },
+    isShow: function isShow(cat) {
+      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
+        return true;
+      }
+      return false;
     }
   }
 });
@@ -51058,7 +51065,7 @@ var render = function() {
               attrs: { id: "catbtn", name: cat, value: "cat" },
               on: {
                 click: function($event) {
-                  _vm.selectedCategory = cat
+                  _vm.selectedCategory = cat.newcategory
                 }
               }
             },
@@ -51072,21 +51079,25 @@ var render = function() {
     _c(
       "ul",
       _vm._l(_vm.posts, function(post, index) {
-        return _c("li", { key: index, staticClass: "title" }, [
-          _c("h3", { staticClass: "post-header" }, [
-            _vm._v(_vm._s(post.newtitle))
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "post-text" }, [_vm._v(_vm._s(post.newpost))]),
-          _vm._v(" "),
-          _c("p", { staticClass: "post-text" }, [
-            _vm._v(_vm._s(post.category.newcategory))
-          ]),
-          _vm._v(" "),
-          _c("hr", {
-            staticStyle: { width: "60%", "background-color": "dodgerblue" }
-          })
-        ])
+        return _vm.isShow(post.category)
+          ? _c("li", { key: index, staticClass: "title" }, [
+              _c("h3", { staticClass: "post-header" }, [
+                _vm._v(_vm._s(post.newtitle))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "post-text" }, [
+                _vm._v(_vm._s(post.newpost))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "post-text" }, [
+                _vm._v(_vm._s(post.category.newcategory))
+              ]),
+              _vm._v(" "),
+              _c("hr", {
+                staticStyle: { width: "60%", "background-color": "dodgerblue" }
+              })
+            ])
+          : _vm._e()
       })
     )
   ])
@@ -51920,7 +51931,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh3[data-v-85ef4954] {\r\n  color: black;\n}\nul[data-v-85ef4954] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-85ef4954] {\r\n  padding: 40px;\n}\n.post[data-v-85ef4954] {\r\n  text-align: center;\r\n  font-size: 400%;\r\n  font-family: cursive;\r\n  margin-left: 45px;\r\n  color: white;\n}\n.float-md-right[data-v-85ef4954] {\r\n    margin-top: 1%;\n}\n.post-header[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\na[data-v-85ef4954] {\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 5px;\n}\na[data-v-85ef4954]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-85ef4954] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.btn.btn-primary[data-v-85ef4954] {\r\n  margin-top: 15px;\n}\n.btn.btn-info[data-v-85ef4954] {\r\n  margin-top: 15px;\r\n  margin-left: 10px;\n}\n.category[data-v-85ef4954] {\r\n margin-left: 20px;\r\n margin-top: 40px;\n}\n.category .btn.btn-primary[data-v-85ef4954]:not(:first-child) {\r\nmargin-right: 4px;\n}\n.form-control[data-v-85ef4954] {\r\n  margin-top: 20px;\r\n  margin-top: 3%;\n}\nselect[data-v-85ef4954] {\r\n  margin-top: 5%;\n}\n.btn.btn-primary.btn-sm[data-v-85ef4954] {\r\nmargin-bottom: 20px;\n}\n.Scat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.btn.btn-link.btn-sm[data-v-85ef4954] {\r\n  text-decoration: none;\r\n  border: 3px solid dodgerblue;\r\n  margin-left: 5px;\r\n  margin-bottom: 5px;\r\n  color: white;\r\n  font-family: cursive;\n}\nspan[data-v-85ef4954] {\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\nh3[data-v-85ef4954] {\r\n  color: black;\n}\nul[data-v-85ef4954] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-85ef4954] {\r\n  padding: 40px;\n}\n.post[data-v-85ef4954] {\r\n  text-align: center;\r\n  font-size: 400%;\r\n  font-family: cursive;\r\n  margin-left: 45px;\r\n  color: white;\n}\n.post-header[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\na[data-v-85ef4954] {\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 5px;\n}\na[data-v-85ef4954]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-85ef4954] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.btn.btn-primary[data-v-85ef4954] {\r\n  margin-top: 15px;\n}\n.btn.btn-info[data-v-85ef4954] {\r\n  margin-top: 15px;\r\n  margin-left: 10px;\n}\n.category[data-v-85ef4954] {\r\n  margin-left: 20px;\r\n  margin-top: 40px;\n}\n.category .btn.btn-primary[data-v-85ef4954]:not(:first-child) {\r\n  margin-right: 4px;\n}\n.form-control[data-v-85ef4954] {\r\n  margin-top: 20px;\r\n  margin-top: 3%;\n}\nselect[data-v-85ef4954] {\r\n  margin-top: 5%;\n}\n.btn.btn-primary.btn-sm[data-v-85ef4954] {\r\n  margin-bottom: 20px;\n}\n.Scat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.btn.btn-link.btn-sm[data-v-85ef4954] {\r\n  text-decoration: none;\r\n  border: 3px solid dodgerblue;\r\n  margin-left: 5px;\r\n  margin-bottom: 5px;\r\n  color: white;\r\n  font-family: cursive;\n}\nspan[data-v-85ef4954] {\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51971,17 +51982,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Home',
+  name: "Home",
   data: function data() {
     return {
-      newtitle: '',
-      newpost: '',
+      newtitle: "",
+      newpost: "",
       posts: [],
-      newcategory: '',
-      categories: []
+      newcategory: "",
+      categories: [],
+      selectedCategory: 'All',
+      edit: false,
+      post_id: ""
     };
   },
   mounted: function mounted() {
@@ -51999,36 +52013,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         newcategory: this.newcategory.id,
         category: this.newcategory
       };
-      axios.post('/addpost', data).then(function (response) {
+      axios.post("/addpost", data).then(function (response) {
         _this.posts.push(data);
       });
-      this.newtitle = '', this.newpost = '', this.newcategory = '';
+      this.newtitle = "", this.newpost = "", this.newcategory = "";
     },
-    updatepost: function updatepost() {},
-    removepost: function removepost(id, index) {
+    editpost: function editpost(post) {
+      this.edit = true;
+      this.newtitle = post.newtitle, this.newpost = post.newpost, this.newcategory = post.category.newcategory;
+      this.edit = true;
+      this.post_id = post.id;
+    },
+    updatepost: function updatepost() {
       var _this2 = this;
 
+      var data = {
+        newtitle: this.newtitle,
+        newpost: this.newpost,
+        category: this.newcategory
+      };
+      axios.put("/editpost/" + this.post_id, data).then(function (response) {
+        _this2.posts.push(data);
+      });
+      this.newtitle = "", this.newpost = "", this.newcategory = "";
+    },
+    removepost: function removepost(id, index) {
+      var _this3 = this;
+
       console.log(id);
-      var self = this;
       var data = {
         id: id
       };
-      data['_method'] = 'DELETE';
-      axios.post('/post/' + id, data).then(function (response) {
-        _this2.posts.splice(index, 1);
+      data["_method"] = "DELETE";
+      axios.post("/post/" + id, data).then(function (response) {
+        _this3.posts.splice(index, 1);
       });
     },
     post: function post() {
       var self = this;
-      axios.get('/post').then(function (response) {
+      axios.get("/post").then(function (response) {
         self.posts = response.data;
       });
     },
     category: function category() {
       var self = this;
-      axios.get('/category').then(function (response) {
+      axios.get("/category").then(function (response) {
         self.categories = response.data;
       });
+    },
+    isShow: function isShow(cat) {
+      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
+        return true;
+      }
+      return false;
     }
   }
 });
@@ -52061,6 +52098,8 @@ var render = function() {
         ],
         1
       ),
+      _vm._v(" "),
+      _c("br"),
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
@@ -52167,17 +52206,24 @@ var render = function() {
           }),
           _c("br"),
           _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", on: { click: _vm.addpost } },
-            [_vm._v("Submit")]
-          ),
+          !_vm.edit
+            ? _c(
+                "button",
+                { staticClass: "btn btn-primary", on: { click: _vm.addpost } },
+                [_vm._v("Submit")]
+              )
+            : _vm._e(),
           _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-info", on: { click: _vm.updatepost } },
-            [_vm._v("Update")]
-          )
+          _vm.edit
+            ? _c(
+                "button",
+                {
+                  staticClass: "btn btn-success",
+                  on: { click: _vm.updatepost }
+                },
+                [_vm._v("Update")]
+              )
+            : _vm._e()
         ],
         1
       ),
@@ -52209,7 +52255,7 @@ var render = function() {
                 attrs: { name: cat, value: "cat" },
                 on: {
                   click: function($event) {
-                    _vm.selectedCategory = cat
+                    _vm.selectedCategory = cat.newcategory
                   }
                 }
               },
@@ -52223,56 +52269,63 @@ var render = function() {
       _c(
         "ul",
         _vm._l(_vm.posts, function(post, index) {
-          return _c("li", { key: index, staticClass: "title" }, [
-            _c(
-              "h3",
-              { staticClass: "post-header" },
-              [
-                _c("router-link", { attrs: { to: "/Description/" + index } }, [
-                  _vm._v(_vm._s(post.newtitle))
-                ])
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("p", { staticClass: "post-text collapse" }, [
-              _vm._v(" " + _vm._s(post.newpost) + " ")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "post-cat" }, [
-              _vm._v(_vm._s(post.category.newcategory))
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                on: {
-                  click: function($event) {
-                    _vm.editpost(post, index)
+          return _vm.isShow(post.category)
+            ? _c("li", { key: index, staticClass: "title" }, [
+                _c(
+                  "h3",
+                  { staticClass: "post-header" },
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/Description/" + index } },
+                      [_vm._v(_vm._s(post.newtitle))]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "post-text collapse" }, [
+                  _vm._v(" " + _vm._s(post.newpost) + " ")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "post-cat" }, [
+                  _vm._v(_vm._s(post.category.newcategory))
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success",
+                    on: {
+                      click: function($event) {
+                        _vm.editpost(post)
+                      }
+                    }
+                  },
+                  [_vm._v("Edit")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-danger",
+                    on: {
+                      click: function($event) {
+                        _vm.removepost(post.id, index)
+                      }
+                    }
+                  },
+                  [_vm._v("Remove")]
+                ),
+                _vm._v(" "),
+                _c("hr", {
+                  staticStyle: {
+                    width: "60%",
+                    "background-color": "dodgerblue"
                   }
-                }
-              },
-              [_vm._v("Edit")]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-danger",
-                on: {
-                  click: function($event) {
-                    _vm.removepost(post.id, index)
-                  }
-                }
-              },
-              [_vm._v("Remove")]
-            ),
-            _vm._v(" "),
-            _c("hr", {
-              staticStyle: { width: "60%", "background-color": "dodgerblue" }
-            })
-          ])
+                })
+              ])
+            : _vm._e()
         })
       ),
       _vm._v(" "),
@@ -52335,7 +52388,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.Categories[data-v-49729082] {\r\n background-repeat:no-repeat;\r\n background-size: cover;\n}\nh1[data-v-49729082] {\r\n    text-align: center;\r\n    font-family: cursive;\r\n    font-size: 400%;\r\n    color: white;\n}\nul[data-v-49729082] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-49729082] {\r\n  padding: 40px;\n}\n.post-header[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-text[data-v-49729082] {\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\n.category[data-v-49729082] {\r\n    margin-top: 5%;\r\n    margin-left: 20px;\n}\n.fab.fa-blogger-b[data-v-49729082] {\r\n  color: dodgerblue;\n}\na[data-v-49729082]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-49729082] {\r\n  color: black;\n}\n.category .btn.btn-primary[data-v-49729082]:not(:first-child) {\r\nmargin-right: 4px;\n}\r\n", ""]);
+exports.push([module.i, "\n.Categories[data-v-49729082] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-49729082] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-49729082] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-49729082] {\r\n  padding: 40px;\n}\n.post-header[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-text[data-v-49729082] {\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\n.category[data-v-49729082] {\r\n  margin-top: 5%;\r\n  margin-left: 20px;\n}\n.fab.fa-blogger-b[data-v-49729082] {\r\n  color: dodgerblue;\n}\na[data-v-49729082]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-49729082] {\r\n  color: black;\n}\n.category .btn.btn-primary[data-v-49729082]:not(:first-child) {\r\n  margin-right: 4px;\n}\r\n", ""]);
 
 // exports
 
@@ -52367,13 +52420,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Userblogs',
+  name: "Userblogs",
   data: function data() {
     return {
-      selectedCategory: 'All',
+      selectedCategory: "All",
       posts: [],
       categories: []
     };
@@ -52385,15 +52440,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     post: function post() {
       var self = this;
-      axios.get('/post').then(function (response) {
+      axios.get("/post").then(function (response) {
         self.posts = response.data;
       });
     },
     category: function category() {
       var self = this;
-      axios.get('/category').then(function (response) {
+      axios.get("/category").then(function (response) {
         self.categories = response.data;
       });
+    },
+    isShow: function isShow(cat) {
+      if (this.selectedCategory === "All" || this.selectedCategory === cat.newcategory) {
+        return true;
+      }
+      return false;
     }
   }
 });
@@ -52418,6 +52479,8 @@ var render = function() {
       ],
       1
     ),
+    _vm._v(" "),
+    _c("br"),
     _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
@@ -52448,7 +52511,7 @@ var render = function() {
               attrs: { id: "catbtn", name: cat, value: "cat" },
               on: {
                 click: function($event) {
-                  _vm.selectedCategory = cat
+                  _vm.selectedCategory = cat.newcategory
                 }
               }
             },
@@ -52462,21 +52525,25 @@ var render = function() {
     _c(
       "ul",
       _vm._l(_vm.posts, function(post, index) {
-        return _c("li", { key: index, staticClass: "title" }, [
-          _c("h3", { staticClass: "post-header" }, [
-            _vm._v(_vm._s(post.newtitle))
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "post-text" }, [_vm._v(_vm._s(post.newpost))]),
-          _vm._v(" "),
-          _c("p", { staticClass: "post-cat" }, [
-            _vm._v(_vm._s(post.category.newcategory))
-          ]),
-          _vm._v(" "),
-          _c("hr", {
-            staticStyle: { width: "60%", "background-color": "dodgerblue" }
-          })
-        ])
+        return _vm.isShow(post.category)
+          ? _c("li", { key: index, staticClass: "title" }, [
+              _c("h3", { staticClass: "post-header" }, [
+                _vm._v(_vm._s(post.newtitle))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "post-text" }, [
+                _vm._v(_vm._s(post.newpost))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "post-cat" }, [
+                _vm._v(_vm._s(post.category.newcategory))
+              ]),
+              _vm._v(" "),
+              _c("hr", {
+                staticStyle: { width: "60%", "background-color": "dodgerblue" }
+              })
+            ])
+          : _vm._e()
       })
     )
   ])
@@ -52486,9 +52553,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h1", { staticClass: "blog" }, [
-      _c("i", { staticClass: "fab fa-blogger-b" }),
-      _vm._v("Blogs")
+    return _c("div", [
+      _c("h1", { staticClass: "blog" }, [
+        _c("i", { staticClass: "fab fa-blogger-b" }),
+        _vm._v("Blogs")
+      ])
     ])
   }
 ]
@@ -52572,7 +52641,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       newcategory: '',
-      categories: []
+      categories: [],
+      cat: ''
     };
   },
   mounted: function mounted() {
@@ -52594,6 +52664,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var self = this;
       axios.get('/category').then(function (response) {
         self.categories = response.data;
+      });
+    },
+    removecategory: function removecategory(id, index) {
+      var _this = this;
+
+      console.log(id);
+      var data = {
+        id: id
+      };
+      data['_method'] = 'DELETE';
+      axios.post('/category/' + id, data).then(function (response) {
+        _this.categories.splice(index, 1);
       });
     }
   }
@@ -52671,7 +52753,7 @@ var render = function() {
               attrs: { name: cat, value: "cat" },
               on: {
                 click: function($event) {
-                  _vm.removeCategory(index)
+                  _vm.removecategory(cat.id, index)
                 }
               }
             },
@@ -52728,7 +52810,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n background-repeat:no-repeat;\r\n background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n    border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n    margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n    letter-spacing: 1px;\r\n    font-family: cursive;\r\n    text-indent: 30%;\n}\r\n", ""]);
+exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n  margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n  letter-spacing: 1px;\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\r\n", ""]);
 
 // exports
 
@@ -52759,13 +52841,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Description',
+  name: "Description",
   data: function data() {
     return {
-      post: ''
+      posts: []
     };
+  },
+  mounted: function mounted() {
+    this.post();
+  },
+
+  methods: {
+    post: function post() {
+      var self = this;
+      axios.get("/post/" + this.$route.params.id).then(function (response) {
+        self.posts = response.data;
+      });
+    }
   }
 });
 
@@ -52796,15 +52889,15 @@ var render = function() {
       _c("ul", [
         _c("li", { staticClass: "title" }, [
           _c("h3", { staticClass: "post-header" }, [
-            _vm._v(_vm._s(_vm.post.title))
+            _vm._v(_vm._s(_vm.post.newtitle))
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "post-text" }, [
-            _vm._v(_vm._s(_vm.post.post))
+            _vm._v(_vm._s(_vm.post.newpost))
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "post-cat" }, [
-            _vm._v(_vm._s(_vm.post.category))
+            _vm._v(_vm._s(_vm.post.newcategory))
           ]),
           _vm._v(" "),
           _c("hr", {
