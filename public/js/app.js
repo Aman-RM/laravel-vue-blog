@@ -50930,7 +50930,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nul[data-v-4bfcfa5a] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-4bfcfa5a] {\r\n  padding: 40px;\n}\n.post-header[data-v-4bfcfa5a] {\r\n  font-family: cursive;\n}\n.post-text[data-v-4bfcfa5a] {\r\n  font-family: cursive;\n}\n.category[data-v-4bfcfa5a] {\r\n    margin-top: 5%;\r\n    margin-left: 5px;\n}\n.category .btn.btn-primary[data-v-4bfcfa5a]:not(:first-child) {\r\nmargin-right: 4px;\n}\r\n", ""]);
+exports.push([module.i, "\nul[data-v-4bfcfa5a] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-4bfcfa5a] {\r\n  padding: 40px;\n}\n.post-header[data-v-4bfcfa5a] {\r\n  font-family: cursive;\n}\n.post-text[data-v-4bfcfa5a] {\r\n  font-family: cursive;\n}\n.category[data-v-4bfcfa5a] {\r\n  margin-top: 5%;\r\n  margin-left: 5px;\n}\n.category .btn.btn-primary[data-v-4bfcfa5a]:not(:first-child) {\r\n  margin-right: 4px;\n}\r\n", ""]);
 
 // exports
 
@@ -50992,12 +50992,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Blogs',
+  name: "Blogs",
   data: function data() {
     return {
-      selectedCategory: 'All',
+      selectedCategory: "All",
       posts: [],
       categories: []
     };
@@ -51010,18 +51009,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     post: function post() {
       var self = this;
-      axios.get('/post').then(function (response) {
+      axios.get("/post").then(function (response) {
         self.posts = response.data;
       });
     },
     category: function category() {
       var self = this;
-      axios.get('/category').then(function (response) {
+      axios.get("/category").then(function (response) {
         self.categories = response.data;
       });
     },
     isShow: function isShow(cat) {
-      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
+      if (this.selectedCategory === "All" || this.selectedCategory === cat.newcategory) {
         return true;
       }
       return false;
@@ -51147,7 +51146,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh1[data-v-ddae4778] {\r\n    font-family: cursive;\r\n    font-size: 400%;\r\n    text-align: center;\r\n    margin-top: 5%;\r\n    margin-right: 7%;\r\n    color: white;\r\n    -webkit-text-stroke: 2px black;\n}\np[data-v-ddae4778] {\r\n    margin-top: 5%;\r\n    font-family: cursive;\r\n    font-size: 220%;\r\n    text-indent: 20%;\r\n     color: white;\r\n    -webkit-text-stroke: 1px black;\n}\r\n", ""]);
+exports.push([module.i, "\nh1[data-v-ddae4778] {\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  margin-right: 7%;\r\n  color: white;\r\n  -webkit-text-stroke: 2px black;\n}\np[data-v-ddae4778] {\r\n  margin-top: 5%;\r\n  font-family: cursive;\r\n  font-size: 220%;\r\n  text-indent: 20%;\r\n  color: white;\r\n  -webkit-text-stroke: 1px black;\n}\r\n", ""]);
 
 // exports
 
@@ -51222,7 +51221,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh1[data-v-1ac7daf9] {\r\n     font-family: cursive;\r\n    font-size: 400%;\r\n    text-align: center;\r\n    margin-top: 5%;\r\n    margin-right: 7%;\r\n    -webkit-text-stroke: 2px black;\r\n    color: white\n}\np[data-v-1ac7daf9] {\r\n    text-align: center;\r\n    margin-top: 5%;\r\n    font-family: cursive;\r\n    font-size: 250%;\r\n    margin-right: 8%;\r\n    color: white;\r\n    -webkit-text-stroke: 1px black;\n}\ni[data-v-1ac7daf9] {\r\n    margin-left: 40%;\r\n    color:white;\n}\nspan[data-v-1ac7daf9] {\r\n    font-size: 150%;\r\n    font-family: cursive;\r\n    color: dodgerblue;\r\n    -webkit-text-stroke: 1px black;\n}\r\n", ""]);
+exports.push([module.i, "\nh1[data-v-1ac7daf9] {\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  margin-right: 7%;\r\n  -webkit-text-stroke: 2px black;\r\n  color: white;\n}\np[data-v-1ac7daf9] {\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  font-family: cursive;\r\n  font-size: 250%;\r\n  margin-right: 8%;\r\n  color: white;\r\n  -webkit-text-stroke: 1px black;\n}\ni[data-v-1ac7daf9] {\r\n  margin-left: 40%;\r\n  color: white;\n}\nspan[data-v-1ac7daf9] {\r\n  font-size: 150%;\r\n  font-family: cursive;\r\n  color: dodgerblue;\r\n  -webkit-text-stroke: 1px black;\n}\r\n", ""]);
 
 // exports
 
@@ -51305,7 +51304,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh2[data-v-4e82426e] {\r\n   text-align: center;\r\n  font-family: cursive;\r\n  font-size: 300%;\r\n  color: white;\r\n  margin-top: 5%;\r\n  margin-right:6%;\r\n  -webkit-text-stroke: 2px black;\n}\np[data-v-4e82426e] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 250%;\r\n  color: white;\r\n  margin-top: 5%;\r\n  -webkit-text-stroke: 2px black;\r\n  text-indent: 5%;\r\n  margin-right:6%;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\nh2[data-v-4e82426e] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 300%;\r\n  color: white;\r\n  margin-top: 5%;\r\n  margin-right: 6%;\r\n  -webkit-text-stroke: 2px black;\n}\np[data-v-4e82426e] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 250%;\r\n  color: white;\r\n  margin-top: 5%;\r\n  -webkit-text-stroke: 2px black;\r\n  text-indent: 5%;\r\n  margin-right: 6%;\n}\r\n", ""]);
 
 // exports
 
@@ -51396,7 +51395,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 60%;\n}\n.Login[data-v-01e7f602] {\r\n  margin: 20% 0 0 26%;\r\n  width: 35%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n    margin-left: 30%;\r\n    color: white;\n}\np[data-v-01e7f602] {\r\n    margin-top: 10px;\r\n    font-size: 14px;\r\n    color: dodgerblue;\r\n    font-family: cursive;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 60%;\n}\n.Login[data-v-01e7f602] {\r\n  margin: 20% 0 0 26%;\r\n  width: 35%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n  margin-left: 30%;\r\n  color: white;\n}\np[data-v-01e7f602] {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51422,27 +51421,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Login',
+  name: "Login",
   data: function data() {
     return {
-      email: '',
-      password: ''
+      email: "",
+      password: ""
     };
   },
 
   methods: {
     signin: function signin() {
-      axios.post('/signin', this.$data).then(function (response) {
-        if (response.data == 'successful') {
-          alert('Welcome!');
-          location.assign('#/Home');
+      axios.post("/signin", this.$data).then(function (response) {
+        if (response.data == "successful") {
+          alert("Welcome!");
+          location.assign("#/Home");
         } else {
-          alert('Error!');
+          alert("Error!");
         }
       }, function () {
-        alert('Please enter correct email or password');
+        alert("Please enter correct email or password");
       });
     }
   }
@@ -51579,7 +51577,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh1.blog[data-v-b8b290ac] {\r\n  margin-top: 20px;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\r\n  margin-left: 80px;\n}\n.post-header[data-v-b8b290ac] {\r\n  font-family: cursive;\n}\na[data-v-b8b290ac] {\r\n  float: left;\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-b8b290ac]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-b8b290ac] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-b8b290ac] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-b8b290ac] {\r\n    border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-b8b290ac] {\r\n  padding: 60px;\r\n  margin-left: 35%;\n}\n.fab.fa-blogger-b[data-v-b8b290ac] {\r\n  color: dodgerblue;\n}\n.category .btn.btn-primary[data-v-b8b290ac]:not(:first-child) {\r\nmargin-right: 4px;\n}\r\n", ""]);
+exports.push([module.i, "\nh1.blog[data-v-b8b290ac] {\r\n  margin-top: 20px;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\r\n  margin-left: 80px;\n}\n.post-header[data-v-b8b290ac] {\r\n  font-family: cursive;\n}\na[data-v-b8b290ac] {\r\n  float: left;\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-b8b290ac]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-b8b290ac] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-b8b290ac] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-b8b290ac] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-b8b290ac] {\r\n  padding: 60px;\r\n  margin-left: 35%;\n}\n.fab.fa-blogger-b[data-v-b8b290ac] {\r\n  color: dodgerblue;\n}\n.category .btn.btn-primary[data-v-b8b290ac]:not(:first-child) {\r\n  margin-right: 4px;\n}\r\n", ""]);
 
 // exports
 
@@ -51729,7 +51727,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.Sign-up[data-v-f11e9162] {\r\n margin: 10% 15% 0% 38%;\r\n width: 20%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n    margin-left: 30%;\r\n    color: white;\n}\nspan[data-v-f11e9162] {\r\n    display: block;\r\n    margin-top: 10px;\r\n    font-size: 14px;\r\n    color: dodgerblue;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.Sign-up[data-v-f11e9162] {\r\n  margin: 10% 15% 0% 38%;\r\n  width: 20%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n  margin-left: 30%;\r\n  color: white;\n}\nspan[data-v-f11e9162] {\r\n  display: block;\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51760,21 +51758,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'SignUp',
+  name: "SignUp",
   data: function data() {
     return {
-      name: '',
-      email: '',
-      password: ''
+      name: "",
+      email: "",
+      password: ""
     };
   },
   methods: {
     signup: function signup() {
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/register', this.$data).then(function () {
-        alert('Your account has been created !');
-        location.assign('#/Home');
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("/register", this.$data).then(function () {
+        alert("Your account has been created !");
+        location.assign("#/Home");
       }, function () {
-        alert('Please enter correct email or password');
+        alert("Please enter correct email or password");
       });
     }
   }
@@ -52605,7 +52603,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n background-repeat:no-repeat;\r\n background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n    font-size: 400%;\r\n    text-align: center;\r\n    font-family: cursive;\r\n    margin-right: 5%;\r\n    color: white\n}\nselect[data-v-02b1c762] {\r\n    margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n    margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n    margin-top: 5%;\r\n    margin-left: 40%;\n}\n.cat[data-v-02b1c762] {\r\n    margin-left: 46%;\r\n    margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\nmargin-right: 4px;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: white;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: black;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  margin-right: 3%;\r\n  font-family: cursive;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n  font-size: 400%;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  margin-right: 5%;\r\n  color: white;\n}\nselect[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n  margin-top: 5%;\r\n  margin-left: 40%;\n}\n.cat[data-v-02b1c762] {\r\n  margin-left: 46%;\r\n  margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\n  margin-right: 4px;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: white;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: black;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  margin-right: 3%;\r\n  font-family: cursive;\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -52635,14 +52633,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'cat',
+  name: "cat",
   data: function data() {
     return {
-      newcategory: '',
+      newcategory: "",
       categories: [],
-      cat: ''
+      cat: ""
     };
   },
   mounted: function mounted() {
@@ -52655,14 +52652,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         newcategory: this.newcategory
       };
       var self = this;
-      axios.post('/addcategory', data).then(function (response) {
+      axios.post("/addcategory", data).then(function (response) {
         console.log(response);
         self.categories.push(response.data);
-      }, this.newcategory = '');
+      }, this.newcategory = "");
     },
     category: function category() {
       var self = this;
-      axios.get('/category').then(function (response) {
+      axios.get("/category").then(function (response) {
         self.categories = response.data;
       });
     },
@@ -52673,8 +52670,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var data = {
         id: id
       };
-      data['_method'] = 'DELETE';
-      axios.post('/category/' + id, data).then(function (response) {
+      data["_method"] = "DELETE";
+      axios.post("/category/" + id, data).then(function (response) {
         _this.categories.splice(index, 1);
       });
     }
@@ -52845,7 +52842,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "Description",
   data: function data() {
     return {
-      post: ''
+      post: "",
+      posts: []
     };
   },
   mounted: function mounted() {

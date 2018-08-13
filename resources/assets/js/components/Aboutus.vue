@@ -8,20 +8,20 @@
 
 <style scoped>
 h1 {
-    font-family: cursive;
-    font-size: 400%;
-    text-align: center;
-    margin-top: 5%;
-    margin-right: 7%;
-    color: white;
-    -webkit-text-stroke: 2px black;
+  font-family: cursive;
+  font-size: 400%;
+  text-align: center;
+  margin-top: 5%;
+  margin-right: 7%;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 p {
-    margin-top: 5%;
-    font-family: cursive;
-    font-size: 220%;
-    text-indent: 20%;
-     color: white;
-    -webkit-text-stroke: 1px black;
+  margin-top: 5%;
+  font-family: cursive;
+  font-size: 220%;
+  text-indent: 20%;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 </style>

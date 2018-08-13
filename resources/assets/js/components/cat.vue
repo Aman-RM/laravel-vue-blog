@@ -17,15 +17,14 @@
 </template>
 
 <script scoped>
-
 export default {
-  name: 'cat',
-  data () {
+  name: "cat",
+  data() {
     return {
-       newcategory: '',
+      newcategory: "",
       categories: [],
-      cat: ''
-    }
+      cat: ""
+    };
   },
   mounted() {
     this.category();
@@ -33,66 +32,62 @@ export default {
   methods: {
     addcategory() {
       let data = {
-       newcategory: this.newcategory
-      }
-      let self = this
-      axios.post('/addcategory', data).then(
-        function(response) {
-          console.log(response)
-          self.categories.push(response.data)
-        },
-        this.newcategory= ''
-      )
+        newcategory: this.newcategory
+      };
+      let self = this;
+      axios.post("/addcategory", data).then(function(response) {
+        console.log(response);
+        self.categories.push(response.data);
+      }, (this.newcategory = ""));
     },
     category() {
-      let self = this
-      axios.get('/category').then(
-        function(response) {
-        self.categories = response.data
-        }
-      )},
+      let self = this;
+      axios.get("/category").then(function(response) {
+        self.categories = response.data;
+      });
+    },
     removecategory(id, index) {
-      console.log(id)
+      console.log(id);
       let data = {
         id: id
-      }
-      data['_method'] = 'DELETE'
-      axios.post('/category/'+ id, data).then( response => {
-          this.categories.splice(index, 1)
-      })
+      };
+      data["_method"] = "DELETE";
+      axios.post("/category/" + id, data).then(response => {
+        this.categories.splice(index, 1);
+      });
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .container-fluid {
- background-repeat:no-repeat;
- background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
-    font-size: 400%;
-    text-align: center;
-    font-family: cursive;
-    margin-right: 5%;
-    color: white
+  font-size: 400%;
+  text-align: center;
+  font-family: cursive;
+  margin-right: 5%;
+  color: white;
 }
 select {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .newCat {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .category {
-    margin-top: 5%;
-    margin-left: 40%;
+  margin-top: 5%;
+  margin-left: 40%;
 }
 .cat {
-    margin-left: 46%;
-    margin-top: 3%;
+  margin-left: 46%;
+  margin-top: 3%;
 }
 .category .btn.btn-primary {
-margin-right: 4px;
+  margin-right: 4px;
 }
 .btn.btn-primary.btn-sm {
   margin-bottom: 5px;

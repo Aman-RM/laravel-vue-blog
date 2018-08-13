@@ -41,10 +41,10 @@ class PostsController extends Controller
 
     return $post;
   }
-  // public function show($id)
-  // {
-  //   Post::find($id);
+  public function show($id)
+  {
+    Post::find($id);
 
-  //   return $post;
-  // }
+    return '';
+  }
 }

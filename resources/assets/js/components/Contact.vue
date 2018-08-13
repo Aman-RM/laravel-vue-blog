@@ -10,31 +10,31 @@
 
 <style scoped>
 h1 {
-     font-family: cursive;
-    font-size: 400%;
-    text-align: center;
-    margin-top: 5%;
-    margin-right: 7%;
-    -webkit-text-stroke: 2px black;
-    color: white
+  font-family: cursive;
+  font-size: 400%;
+  text-align: center;
+  margin-top: 5%;
+  margin-right: 7%;
+  -webkit-text-stroke: 2px black;
+  color: white;
 }
 p {
-    text-align: center;
-    margin-top: 5%;
-    font-family: cursive;
-    font-size: 250%;
-    margin-right: 8%;
-    color: white;
-    -webkit-text-stroke: 1px black;
+  text-align: center;
+  margin-top: 5%;
+  font-family: cursive;
+  font-size: 250%;
+  margin-right: 8%;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 i {
-    margin-left: 40%;
-    color:white;
+  margin-left: 40%;
+  color: white;
 }
 span {
-    font-size: 150%;
-    font-family: cursive;
-    color: dodgerblue;
-    -webkit-text-stroke: 1px black;
+  font-size: 150%;
+  font-family: cursive;
+  color: dodgerblue;
+  -webkit-text-stroke: 1px black;
 }
 </style>

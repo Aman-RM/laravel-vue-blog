@@ -16,44 +16,43 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Blogs',
-  data () {
+  name: "Blogs",
+  data() {
     return {
-      selectedCategory: 'All',
+      selectedCategory: "All",
       posts: [],
       categories: []
-    }
+    };
   },
-   mounted() {
-    this.post()
-    this.category()
+  mounted() {
+    this.post();
+    this.category();
   },
   methods: {
     post() {
-     let self = this
-     axios.get('/post').then(
-         function (response) {
-            self.posts = response.data
-          }
-      )
-   },
-   category() {
-      let self = this
-      axios.get('/category').then(
-        function(response) {
-        self.categories = response.data
-        }
-      )},
-    isShow (cat) {
-      if (this.selectedCategory === 'All' || this.selectedCategory === cat.newcategory) {
-        return true
+      let self = this;
+      axios.get("/post").then(function(response) {
+        self.posts = response.data;
+      });
+    },
+    category() {
+      let self = this;
+      axios.get("/category").then(function(response) {
+        self.categories = response.data;
+      });
+    },
+    isShow(cat) {
+      if (
+        this.selectedCategory === "All" ||
+        this.selectedCategory === cat.newcategory
+      ) {
+        return true;
       }
-      return false
+      return false;
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -73,10 +72,10 @@ li {
   font-family: cursive;
 }
 .category {
-    margin-top: 5%;
-    margin-left: 5px;
+  margin-top: 5%;
+  margin-left: 5px;
 }
 .category .btn.btn-primary:not(:first-child) {
-margin-right: 4px;
+  margin-right: 4px;
 }
 </style>

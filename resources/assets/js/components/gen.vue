@@ -6,19 +6,17 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
 h2 {
-   text-align: center;
+  text-align: center;
   font-family: cursive;
   font-size: 300%;
   color: white;
   margin-top: 5%;
-  margin-right:6%;
+  margin-right: 6%;
   -webkit-text-stroke: 2px black;
 }
 p {
@@ -29,7 +27,6 @@ p {
   margin-top: 5%;
   -webkit-text-stroke: 2px black;
   text-indent: 5%;
-  margin-right:6%;
+  margin-right: 6%;
 }
-
 </style>

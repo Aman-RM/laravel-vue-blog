@@ -13,37 +13,37 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'SignUp',
-  data: function () {
+  name: "SignUp",
+  data: function() {
     return {
-      name: '',
-      email: '',
-      password: ''
-    }
+      name: "",
+      email: "",
+      password: ""
+    };
   },
   methods: {
     signup() {
-        axios.post('/register', this.$data).then(
-        function () {
-          alert('Your account has been created !')
-          location.assign('#/Home')
-    },
-    function () {
-          alert('Please enter correct email or password')
+      axios.post("/register", this.$data).then(
+        function() {
+          alert("Your account has been created !");
+          location.assign("#/Home");
+        },
+        function() {
+          alert("Please enter correct email or password");
         }
-   )
+      );
+    }
   }
- }
-}
+};
 </script>
 
 <style scoped>
 .Sign-up {
- margin: 10% 15% 0% 38%;
- width: 20%;
+  margin: 10% 15% 0% 38%;
+  width: 20%;
 }
 input {
   margin: 10px 0;
@@ -55,14 +55,14 @@ button {
   cursor: pointer;
 }
 h2 {
-    margin-left: 30%;
-    color: white;
+  margin-left: 30%;
+  color: white;
 }
 span {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: dodgerblue;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: dodgerblue;
 }
 a {
   color: white;

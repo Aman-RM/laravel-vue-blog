@@ -19,13 +19,12 @@
 
 <script scoped>
 export default {
-  data () {
+  data() {
     return {
       show: false
-    }
+    };
   }
-}
-
+};
 </script>
 
 <style scoped>
@@ -58,7 +57,7 @@ a:hover {
   margin-top: 0;
 }
 .router-link-exact-active.router-link-active {
-    border-bottom: 3px solid dodgerblue;
+  border-bottom: 3px solid dodgerblue;
 }
 .tabs {
   padding: 60px;
@@ -68,6 +67,6 @@ a:hover {
   color: dodgerblue;
 }
 .category .btn.btn-primary:not(:first-child) {
-margin-right: 4px;
+  margin-right: 4px;
 }
 </style>

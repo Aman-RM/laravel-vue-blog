@@ -13,34 +13,32 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Login',
-  data () {
+  name: "Login",
+  data() {
     return {
-      email: '',
-      password: '',
-    }
+      email: "",
+      password: ""
+    };
   },
   methods: {
     signin() {
-        axios.post('/signin', this.$data).then(
-        function (response) {
-          if (response.data =='successful') {
-           alert('Welcome!')
-          location.assign('#/Home')
+      axios.post("/signin", this.$data).then(
+        function(response) {
+          if (response.data == "successful") {
+            alert("Welcome!");
+            location.assign("#/Home");
           } else {
-             alert('Error!')
+            alert("Error!");
           }
-         
-    },
-    function () {
-          alert('Please enter correct email or password')
+        },
+        function() {
+          alert("Please enter correct email or password");
         }
-   )
+      );
+    }
   }
- }
-}
+};
 </script>
 
 <style scoped>
@@ -61,14 +59,14 @@ button {
   cursor: pointer;
 }
 h2 {
-    margin-left: 30%;
-    color: white;
+  margin-left: 30%;
+  color: white;
 }
 p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: dodgerblue;
-    font-family: cursive;
+  margin-top: 10px;
+  font-size: 14px;
+  color: dodgerblue;
+  font-family: cursive;
 }
 a {
   color: white;

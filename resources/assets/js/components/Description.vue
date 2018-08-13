@@ -22,15 +22,16 @@ export default {
   name: "Description",
   data() {
     return {
-      post:''
+      post: "",
+      posts: []
     };
   },
   mounted() {
     axios.get("/post/" + this.id).then(function(response) {
-      this.posts = response.data;
+       this.posts = response.data;
     });
   },
-};
+}
 </script>
 
 <style scoped>
