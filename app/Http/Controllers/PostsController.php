@@ -45,6 +45,6 @@ class PostsController extends Controller
   {
     Post::find($id);
 
-    return $post;
+    return '';
   }
 }
