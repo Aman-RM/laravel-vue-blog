@@ -93,11 +93,11 @@ select {
   margin-bottom: 5px;
 }
 a:hover {
-  color: white;
+  color: dodgerblue;
   text-decoration: none;
 }
 a {
-  color: black;
+  color: white;
 }
 .newCat {
   margin-left: -7%;
@@ -107,5 +107,8 @@ p {
   margin-right: 3%;
   font-family: cursive;
   color: white;
+}
+i {
+  color: dodgerblue;
 }
 </style>

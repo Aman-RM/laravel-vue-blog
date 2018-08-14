@@ -5,7 +5,7 @@
     </nav>
     <br>
     <div>
-       <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
+       <h1 class="blog"><i class="fab fa-blogger-b"></i>logs</h1>
     </div>
 <div class="category">
   <button class="btn btn-primary" name="category" @click="selectedCategory = 'All'" value="All">All</button>
@@ -103,9 +103,12 @@ a:hover {
   text-decoration: none;
 }
 a {
-  color: black;
+  color: white;
 }
 .category .btn.btn-primary:not(:first-child) {
   margin-right: 4px;
+}
+i {
+  color: dodgerblue;
 }
 </style>

@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg float-md-left">
     <router-link to="/Home"><i class="fas fa-arrow-left"></i> Back</router-link>
     </nav>
-  <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
+  <h1 class="blog"><i class="fab fa-blogger-b"></i>logs</h1>
    <ul>
      <li class="title">
        <h3 class="post-header">{{ post.newtitle }}</h3>
@@ -27,9 +27,10 @@ export default {
     };
   },
   mounted() {
-    axios.get("/post/" + this.id).then(function(response) {
+    let self = this
+    axios.get("/post/" + this.$route.params.id).then(function(response) {
        console.log(response)
-      this.posts = response.data;
+      self.post = response.data;
     });
   }
 };
@@ -60,7 +61,7 @@ ul {
 }
 a {
   float: left;
-  color: black;
+  color:white;
   text-decoration: none;
   padding: 8px;
 }
@@ -92,5 +93,8 @@ a:hover {
   letter-spacing: 1px;
   font-family: cursive;
   text-indent: 30%;
+}
+i {
+  color: dodgerblue;
 }
 </style>

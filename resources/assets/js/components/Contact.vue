@@ -37,4 +37,7 @@ span {
   color: dodgerblue;
   -webkit-text-stroke: 1px black;
 }
+i {
+  color: dodgerblue;
+}
 </style>

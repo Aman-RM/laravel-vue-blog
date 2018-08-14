@@ -51221,7 +51221,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh1[data-v-1ac7daf9] {\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  margin-right: 7%;\r\n  -webkit-text-stroke: 2px black;\r\n  color: white;\n}\np[data-v-1ac7daf9] {\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  font-family: cursive;\r\n  font-size: 250%;\r\n  margin-right: 8%;\r\n  color: white;\r\n  -webkit-text-stroke: 1px black;\n}\ni[data-v-1ac7daf9] {\r\n  margin-left: 40%;\r\n  color: white;\n}\nspan[data-v-1ac7daf9] {\r\n  font-size: 150%;\r\n  font-family: cursive;\r\n  color: dodgerblue;\r\n  -webkit-text-stroke: 1px black;\n}\r\n", ""]);
+exports.push([module.i, "\nh1[data-v-1ac7daf9] {\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  margin-right: 7%;\r\n  -webkit-text-stroke: 2px black;\r\n  color: white;\n}\np[data-v-1ac7daf9] {\r\n  text-align: center;\r\n  margin-top: 5%;\r\n  font-family: cursive;\r\n  font-size: 250%;\r\n  margin-right: 8%;\r\n  color: white;\r\n  -webkit-text-stroke: 1px black;\n}\ni[data-v-1ac7daf9] {\r\n  margin-left: 40%;\r\n  color: white;\n}\nspan[data-v-1ac7daf9] {\r\n  font-size: 150%;\r\n  font-family: cursive;\r\n  color: dodgerblue;\r\n  -webkit-text-stroke: 1px black;\n}\ni[data-v-1ac7daf9] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -51395,7 +51395,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 60%;\n}\n.Login[data-v-01e7f602] {\r\n  margin: 20% 0 0 26%;\r\n  width: 35%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n  margin-left: 30%;\r\n  color: white;\n}\np[data-v-01e7f602] {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 30%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Login[data-v-01e7f602] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n  margin-left: 30%;\r\n  color: white;\n}\np[data-v-01e7f602] {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51577,7 +51577,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh1.blog[data-v-b8b290ac] {\r\n  margin-top: 20px;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\r\n  margin-left: 80px;\n}\n.post-header[data-v-b8b290ac] {\r\n  font-family: cursive;\n}\na[data-v-b8b290ac] {\r\n  float: left;\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-b8b290ac]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-b8b290ac] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-b8b290ac] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-b8b290ac] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-b8b290ac] {\r\n  padding: 60px;\r\n  margin-left: 35%;\n}\n.fab.fa-blogger-b[data-v-b8b290ac] {\r\n  color: dodgerblue;\n}\n.category .btn.btn-primary[data-v-b8b290ac]:not(:first-child) {\r\n  margin-right: 4px;\n}\r\n", ""]);
+exports.push([module.i, "\nh1.blog[data-v-b8b290ac] {\r\n  margin-top: 20px;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\r\n  margin-left: 80px;\n}\n.post-header[data-v-b8b290ac] {\r\n  font-family: cursive;\n}\na[data-v-b8b290ac] {\r\n  float: left;\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-b8b290ac]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-b8b290ac] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-b8b290ac] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-b8b290ac] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-b8b290ac] {\r\n  padding: 60px;\r\n  margin-left: 35%;\n}\n.fab.fa-blogger-b[data-v-b8b290ac] {\r\n  color: dodgerblue;\n}\n.category .btn.btn-primary[data-v-b8b290ac]:not(:first-child) {\r\n  margin-right: 4px;\n}\ni[data-v-b8b290ac] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -51678,7 +51678,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "head" }, [
       _c("h1", { staticClass: "blog" }, [
         _c("i", { staticClass: "fab fa-blogger-b" }),
-        _vm._v("Blogs")
+        _vm._v("logs")
       ])
     ])
   }
@@ -51727,7 +51727,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.Sign-up[data-v-f11e9162] {\r\n  margin: 10% 15% 0% 38%;\r\n  width: 20%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n  margin-left: 30%;\r\n  color: white;\n}\nspan[data-v-f11e9162] {\r\n  display: block;\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-f11e9162] {\r\n   width: 30%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Sign-up[data-v-f11e9162] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n  margin-left: 30%;\r\n  color: white;\n}\nspan[data-v-f11e9162] {\r\n  display: block;\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51929,7 +51929,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nh3[data-v-85ef4954] {\r\n  color: black;\n}\nul[data-v-85ef4954] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-85ef4954] {\r\n  padding: 40px;\n}\n.post[data-v-85ef4954] {\r\n  text-align: center;\r\n  font-size: 400%;\r\n  font-family: cursive;\r\n  margin-left: 45px;\r\n  color: white;\n}\n.post-header[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\na[data-v-85ef4954] {\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 5px;\n}\na[data-v-85ef4954]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-85ef4954] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.btn.btn-primary[data-v-85ef4954] {\r\n  margin-top: 15px;\n}\n.btn.btn-info[data-v-85ef4954] {\r\n  margin-top: 15px;\r\n  margin-left: 10px;\n}\n.category[data-v-85ef4954] {\r\n  margin-left: 20px;\r\n  margin-top: 40px;\n}\n.category .btn.btn-primary[data-v-85ef4954]:not(:first-child) {\r\n  margin-right: 4px;\n}\n.form-control[data-v-85ef4954] {\r\n  margin-top: 20px;\r\n  margin-top: 3%;\n}\nselect[data-v-85ef4954] {\r\n  margin-top: 5%;\n}\n.btn.btn-primary.btn-sm[data-v-85ef4954] {\r\n  margin-bottom: 20px;\n}\n.Scat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.btn.btn-link.btn-sm[data-v-85ef4954] {\r\n  text-decoration: none;\r\n  border: 3px solid dodgerblue;\r\n  margin-left: 5px;\r\n  margin-bottom: 5px;\r\n  color: white;\r\n  font-family: cursive;\n}\nspan[data-v-85ef4954] {\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.header[data-v-85ef4954] {\r\n  color: black;\n}\nul[data-v-85ef4954] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-85ef4954] {\r\n  padding: 40px;\n}\n.post[data-v-85ef4954] {\r\n  text-align: center;\r\n  font-size: 400%;\r\n  font-family: cursive;\r\n  margin-left: 45px;\r\n  color: white;\n}\n.post-header[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\na[data-v-85ef4954] {\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 5px;\n}\na[data-v-85ef4954]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-85ef4954] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.btn.btn-primary[data-v-85ef4954] {\r\n  margin-top: 15px;\n}\n.btn.btn-info[data-v-85ef4954] {\r\n  margin-top: 15px;\r\n  margin-left: 10px;\n}\n.category[data-v-85ef4954] {\r\n  margin-left: 20px;\r\n  margin-top: 40px;\n}\n.category .btn.btn-primary[data-v-85ef4954]:not(:first-child) {\r\n  margin-right: 4px;\n}\n.form-control[data-v-85ef4954] {\r\n  margin-top: 20px;\r\n  margin-top: 3%;\n}\nselect[data-v-85ef4954] {\r\n  margin-top: 5%;\n}\n.btn.btn-primary.btn-sm[data-v-85ef4954] {\r\n  margin-bottom: 20px;\n}\n.Scat[data-v-85ef4954] {\r\n  font-family: cursive;\n}\n.btn.btn-link.btn-sm[data-v-85ef4954] {\r\n  text-decoration: none;\r\n  border: 3px solid dodgerblue;\r\n  margin-left: 5px;\r\n  margin-bottom: 5px;\r\n  color: white;\r\n  font-family: cursive;\n}\nspan[data-v-85ef4954] {\r\n  color: white;\n}\ni[data-v-85ef4954] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -52275,7 +52275,10 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { attrs: { to: "/Description/" + post.id } },
+                      {
+                        staticClass: "header",
+                        attrs: { to: "/Description/" + post.id }
+                      },
                       [_vm._v(_vm._s(post.newtitle))]
                     )
                   ],
@@ -52338,7 +52341,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h1", { staticClass: "post" }, [_vm._v(" Create Blog ")])
+      _c("h1", { staticClass: "post" }, [
+        _vm._v(" Create "),
+        _c("i", { staticClass: "fab fa-blogger-b" }),
+        _vm._v("log ")
+      ])
     ])
   }
 ]
@@ -52386,7 +52393,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.Categories[data-v-49729082] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-49729082] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-49729082] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-49729082] {\r\n  padding: 40px;\n}\n.post-header[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-text[data-v-49729082] {\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\n.category[data-v-49729082] {\r\n  margin-top: 5%;\r\n  margin-left: 20px;\n}\n.fab.fa-blogger-b[data-v-49729082] {\r\n  color: dodgerblue;\n}\na[data-v-49729082]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-49729082] {\r\n  color: black;\n}\n.category .btn.btn-primary[data-v-49729082]:not(:first-child) {\r\n  margin-right: 4px;\n}\r\n", ""]);
+exports.push([module.i, "\n.Categories[data-v-49729082] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-49729082] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-49729082] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.9;\r\n  border-radius: 15px;\n}\nli[data-v-49729082] {\r\n  padding: 40px;\n}\n.post-header[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-49729082] {\r\n  font-family: cursive;\n}\n.post-text[data-v-49729082] {\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\n.category[data-v-49729082] {\r\n  margin-top: 5%;\r\n  margin-left: 20px;\n}\n.fab.fa-blogger-b[data-v-49729082] {\r\n  color: dodgerblue;\n}\na[data-v-49729082]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-49729082] {\r\n  color: white;\n}\n.category .btn.btn-primary[data-v-49729082]:not(:first-child) {\r\n  margin-right: 4px;\n}\ni[data-v-49729082] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -52554,7 +52561,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("h1", { staticClass: "blog" }, [
         _c("i", { staticClass: "fab fa-blogger-b" }),
-        _vm._v("Blogs")
+        _vm._v("logs")
       ])
     ])
   }
@@ -52603,7 +52610,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n  font-size: 400%;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  margin-right: 5%;\r\n  color: white;\n}\nselect[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n  margin-top: 5%;\r\n  margin-left: 40%;\n}\n.cat[data-v-02b1c762] {\r\n  margin-left: 46%;\r\n  margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\n  margin-right: 4px;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: white;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: black;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  margin-right: 3%;\r\n  font-family: cursive;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n  font-size: 400%;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  margin-right: 5%;\r\n  color: white;\n}\nselect[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n  margin-top: 5%;\r\n  margin-left: 40%;\n}\n.cat[data-v-02b1c762] {\r\n  margin-left: 46%;\r\n  margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\n  margin-right: 4px;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: white;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  margin-right: 3%;\r\n  font-family: cursive;\r\n  color: white;\n}\ni[data-v-02b1c762] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -52807,7 +52814,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color: black;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n  margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n  letter-spacing: 1px;\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\r\n", ""]);
+exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\n.post-cat[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color:white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n  margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n  letter-spacing: 1px;\r\n  font-family: cursive;\r\n  text-indent: 30%;\n}\ni[data-v-1404e455] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 
@@ -52847,9 +52854,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
   mounted: function mounted() {
-    axios.get("/post/" + this.id).then(function (response) {
+    var self = this;
+    axios.get("/post/" + this.$route.params.id).then(function (response) {
       console.log(response);
-      this.posts = response.data;
+      self.post = response.data;
     });
   }
 });
@@ -52907,7 +52915,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("h1", { staticClass: "blog" }, [
       _c("i", { staticClass: "fab fa-blogger-b" }),
-      _vm._v("Blogs")
+      _vm._v("logs")
     ])
   }
 ]

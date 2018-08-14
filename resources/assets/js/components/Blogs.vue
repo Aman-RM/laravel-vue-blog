@@ -6,7 +6,7 @@
 </nav>
 <br>
 <div class="head">
-  <h1 class="blog"><i class="fab fa-blogger-b"></i>Blogs</h1>
+  <h1 class="blog"><i class="fab fa-blogger-b"></i>logs</h1>
 </div>
   <div class="tabs">
    <router-link to="/Categories">Categories</router-link>
@@ -68,5 +68,8 @@ a:hover {
 }
 .category .btn.btn-primary:not(:first-child) {
   margin-right: 4px;
+}
+i {
+  color: dodgerblue;
 }
 </style>

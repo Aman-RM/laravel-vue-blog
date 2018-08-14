@@ -41,9 +41,16 @@ export default {
 </script>
 
 <style scoped>
+.container-fluid {
+   width: 30%;
+  background-color: black;
+  opacity: 0.8;
+  margin-top: 10%;
+  border-radius: 5%;
+}
 .Sign-up {
-  margin: 10% 15% 0% 38%;
-  width: 20%;
+ width: 70%; 
+ margin-left: 14%;
 }
 input {
   margin: 10px 0;

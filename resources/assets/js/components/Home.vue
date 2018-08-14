@@ -6,7 +6,7 @@
   </nav>
   <br>
   <div>
-  <h1 class="post"> Create Blog </h1>
+  <h1 class="post"> Create <i class="fab fa-blogger-b"></i>log </h1>
   </div>
 
    <div class="Add-post">
@@ -27,7 +27,7 @@
    </div>
    <ul>
      <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">
-       <h3 class="post-header"> <router-link :to="'/Description/'+ post.id">{{ post.newtitle }}</router-link></h3>
+       <h3 class="post-header"> <router-link :to="'/Description/'+ post.id" class="header">{{ post.newtitle }}</router-link></h3>
        <p class="post-text collapse"> {{ post.newpost }} </p>
        <p class="post-cat">{{ post.category.newcategory }}</p>
        <button class="btn btn-success"  @click="editpost(post)">Edit</button>
@@ -129,7 +129,7 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+.header {
   color: black;
 }
 ul {
@@ -155,7 +155,7 @@ li {
   font-family: cursive;
 }
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 5px;
 }
@@ -204,5 +204,8 @@ select {
 }
 span {
   color: white;
+}
+i {
+  color: dodgerblue;
 }
 </style>

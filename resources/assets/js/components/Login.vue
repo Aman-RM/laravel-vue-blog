@@ -43,11 +43,15 @@ export default {
 
 <style scoped>
 .container-fluid {
-  width: 60%;
+  width: 30%;
+  background-color: black;
+  opacity: 0.8;
+  margin-top: 10%;
+  border-radius: 5%;
 }
 .Login {
-  margin: 20% 0 0 26%;
-  width: 35%;
+ width: 70%; 
+ margin-left: 14%;
 }
 input {
   margin: 10px 0;
