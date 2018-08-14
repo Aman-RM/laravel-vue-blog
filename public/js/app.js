@@ -51395,7 +51395,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 30%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Login[data-v-01e7f602] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n  margin-left: 30%;\r\n  color: white;\n}\np[data-v-01e7f602] {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-01e7f602] {\r\n  width: 24%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Login[data-v-01e7f602] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-01e7f602] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-01e7f602] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-01e7f602] {\r\n  margin-left: 30%;\r\n  color: white;\r\n  font-family: cursive;\n}\np[data-v-01e7f602] {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\r\n  width: 115%;\n}\na[data-v-01e7f602] {\r\n  color: white;\n}\n.fa.fa-spinner.fa-spin[data-v-01e7f602] {\r\n  margin-left: 5px;\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 
@@ -51727,7 +51727,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-f11e9162] {\r\n   width: 30%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Sign-up[data-v-f11e9162] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n  margin-left: 30%;\r\n  color: white;\n}\nspan[data-v-f11e9162] {\r\n  display: block;\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-f11e9162] {\r\n  width: 25%;\r\n  background-color: black;\r\n  opacity: 0.8;\r\n  margin-top: 10%;\r\n  border-radius: 5%;\n}\n.Sign-up[data-v-f11e9162] {\r\n width: 70%; \r\n margin-left: 14%;\n}\ninput[data-v-f11e9162] {\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  padding: 10px;\n}\nbutton[data-v-f11e9162] {\r\n  margin-top: 20px;\r\n  cursor: pointer;\n}\nh2[data-v-f11e9162] {\r\n  margin-left: 30%;\r\n  color: white;\r\n  font-family: cursive;\n}\nspan[data-v-f11e9162] {\r\n  display: block;\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  color: dodgerblue;\r\n  font-family: cursive;\n}\na[data-v-f11e9162] {\r\n  color: white;\n}\r\n", ""]);
 
 // exports
 

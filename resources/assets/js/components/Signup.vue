@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .container-fluid {
-   width: 30%;
+  width: 25%;
   background-color: black;
   opacity: 0.8;
   margin-top: 10%;
@@ -64,12 +64,14 @@ button {
 h2 {
   margin-left: 30%;
   color: white;
+  font-family: cursive;
 }
 span {
   display: block;
   margin-top: 10px;
   font-size: 14px;
   color: dodgerblue;
+  font-family: cursive;
 }
 a {
   color: white;
