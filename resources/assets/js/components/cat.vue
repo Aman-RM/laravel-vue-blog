@@ -104,9 +104,9 @@ a {
 }
 p {
   font-size: 200%;
-  margin-right: 3%;
   font-family: cursive;
   color: white;
+  margin-left: -3%;
 }
 i {
   color: dodgerblue;

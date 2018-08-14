@@ -166,6 +166,7 @@ a:hover {
 .Add-post {
   margin-right: 25%;
   margin-left: 25%;
+  width: 40%;
 }
 .btn.btn-primary {
   margin-top: 15px;
