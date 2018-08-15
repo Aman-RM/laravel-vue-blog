@@ -10,7 +10,7 @@
     }
     body {
         height: 100%;
-        background-image: url(/img/coffee.jpg);
+        background-image: url(/img/desk1.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-attachment: fixed;

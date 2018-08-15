@@ -81,6 +81,7 @@ select {
 .category {
   margin-top: 5%;
   margin-left: 40%;
+  margin-right: 35%;
 }
 .cat {
   margin-left: 46%;
@@ -88,6 +89,7 @@ select {
 }
 .category .btn.btn-primary {
   margin-right: 4px;
+  margin-top: 2%;
 }
 .btn.btn-primary.btn-sm {
   margin-bottom: 5px;

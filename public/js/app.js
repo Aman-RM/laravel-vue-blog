@@ -52019,7 +52019,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     editpost: function editpost(post) {
       this.edit = true;
       this.newtitle = post.newtitle, this.newpost = post.newpost, this.newcategory = post.category.newcategory;
-      this.edit = true;
+      // this.edit = true;
       this.post_id = post.id;
     },
     updatepost: function updatepost() {
@@ -52610,7 +52610,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n  font-size: 400%;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  margin-right: 5%;\r\n  color: white;\n}\nselect[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n  margin-top: 5%;\r\n  margin-left: 40%;\n}\n.cat[data-v-02b1c762] {\r\n  margin-left: 46%;\r\n  margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\n  margin-right: 4px;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: white;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  font-family: cursive;\r\n  color: white;\r\n  margin-left: -3%;\n}\ni[data-v-02b1c762] {\r\n  color: dodgerblue;\n}\r\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-02b1c762] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\nh1[data-v-02b1c762] {\r\n  font-size: 400%;\r\n  text-align: center;\r\n  font-family: cursive;\r\n  margin-right: 5%;\r\n  color: white;\n}\nselect[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-top: 5%;\n}\n.category[data-v-02b1c762] {\r\n  margin-top: 5%;\r\n  margin-left: 40%;\r\n  margin-right: 35%;\n}\n.cat[data-v-02b1c762] {\r\n  margin-left: 46%;\r\n  margin-top: 3%;\n}\n.category .btn.btn-primary[data-v-02b1c762] {\r\n  margin-right: 4px;\r\n  margin-top: 2%;\n}\n.btn.btn-primary.btn-sm[data-v-02b1c762] {\r\n  margin-bottom: 5px;\n}\na[data-v-02b1c762]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\na[data-v-02b1c762] {\r\n  color: white;\n}\n.newCat[data-v-02b1c762] {\r\n  margin-left: -7%;\n}\np[data-v-02b1c762] {\r\n  font-size: 200%;\r\n  font-family: cursive;\r\n  color: white;\r\n  margin-left: -3%;\n}\ni[data-v-02b1c762] {\r\n  color: dodgerblue;\n}\r\n", ""]);
 
 // exports
 

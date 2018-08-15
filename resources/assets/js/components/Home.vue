@@ -76,7 +76,7 @@ export default {
       (this.newtitle = post.newtitle),
         (this.newpost = post.newpost),
         (this.newcategory = post.category.newcategory);
-      this.edit = true;
+      // this.edit = true;
       this.post_id = post.id;
     },
 
