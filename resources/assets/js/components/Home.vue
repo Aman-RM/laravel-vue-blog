@@ -76,7 +76,6 @@ export default {
       (this.newtitle = post.newtitle),
         (this.newpost = post.newpost),
         (this.newcategory = post.category.newcategory);
-      // this.edit = true;
       this.post_id = post.id;
     },
 
@@ -87,7 +86,7 @@ export default {
         category: this.newcategory
       };
       axios.put("/editpost/" + this.post_id, data).then(response => {
-        this.posts.push(data);
+        this.post()
       });
       (this.newtitle = ""), (this.newpost = ""), (this.newcategory = "");
     },

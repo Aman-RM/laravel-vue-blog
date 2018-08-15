@@ -52019,7 +52019,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     editpost: function editpost(post) {
       this.edit = true;
       this.newtitle = post.newtitle, this.newpost = post.newpost, this.newcategory = post.category.newcategory;
-      // this.edit = true;
       this.post_id = post.id;
     },
     updatepost: function updatepost() {
@@ -52031,7 +52030,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         category: this.newcategory
       };
       axios.put("/editpost/" + this.post_id, data).then(function (response) {
-        _this2.posts.push(data);
+        _this2.post();
       });
       this.newtitle = "", this.newpost = "", this.newcategory = "";
     },
