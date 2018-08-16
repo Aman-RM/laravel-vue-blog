@@ -32,9 +32,9 @@ i {
   color: white;
 }
 span {
-  font-size: 150%;
+  font-size: 200%;
   font-family: cursive;
-  color: dodgerblue;
+  color: white;
   -webkit-text-stroke: 1px black;
 }
 i {

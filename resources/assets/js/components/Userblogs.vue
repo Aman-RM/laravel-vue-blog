@@ -86,9 +86,12 @@ li {
 }
 .post-cat {
   font-family: cursive;
+  font-size: 110%;
+  color: dodgerblue;
 }
 .post-text {
   font-family: cursive;
+  font-size: 120%;
   text-indent: 30%;
 }
 .category {

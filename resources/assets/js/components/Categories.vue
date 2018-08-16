@@ -8,7 +8,7 @@
      <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">
        <h3 class="post-header">{{ post.newtitle }}</h3>
        <p class="post-text">{{ post.newpost }}</p>
-       <p class="post-text">{{ post.category.newcategory }}</p>
+       <p class="post-cat">{{ post.category.newcategory }}</p>
        <hr style="width:60%;background-color:dodgerblue">
     </li>
    </ul>
@@ -70,6 +70,13 @@ li {
 }
 .post-text {
   font-family: cursive;
+  font-size: 120%;
+  text-indent: 30%;
+}
+.post-cat {
+  font-family: cursive;
+  font-size: 110%;
+  color: dodgerblue;
 }
 .category {
   margin-top: 5%;

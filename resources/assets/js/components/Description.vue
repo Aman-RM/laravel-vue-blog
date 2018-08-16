@@ -56,9 +56,6 @@ ul {
 .post-header {
   font-family: cursive;
 }
-.post-cat {
-  font-family: cursive;
-}
 a {
   float: left;
   color:white;
@@ -93,6 +90,7 @@ a:hover {
   letter-spacing: 1px;
   font-family: cursive;
   text-indent: 30%;
+  font-size: 120%;
 }
 i {
   color: dodgerblue;

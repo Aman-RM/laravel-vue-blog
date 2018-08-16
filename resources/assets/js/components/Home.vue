@@ -152,6 +152,8 @@ li {
 }
 .post-cat {
   font-family: cursive;
+  font-size: 110%;
+  color: dodgerblue;
 }
 a {
   color: white;
