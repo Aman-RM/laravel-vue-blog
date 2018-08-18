@@ -113,4 +113,7 @@ p {
 i {
   color: dodgerblue;
 }
+.navbar.navbar-expand-lg.navbar-dark.float-md-left {
+  font-family: cursive;
+}
 </style>

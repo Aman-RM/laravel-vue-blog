@@ -114,4 +114,7 @@ a {
 i {
   color: dodgerblue;
 }
+.navbar.navbar-expand-lg.float-md-left {
+  font-family: cursive;
+}
 </style>

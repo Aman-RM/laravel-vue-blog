@@ -62,6 +62,7 @@ a:hover {
 .tabs {
   padding: 60px;
   margin-left: 35%;
+  font-family: cursive;
 }
 .fab.fa-blogger-b {
   color: dodgerblue;
@@ -71,5 +72,8 @@ a:hover {
 }
 i {
   color: dodgerblue;
+}
+.navbar.navbar-expand-lg.float-right {
+  font-family: cursive;
 }
 </style>

@@ -210,4 +210,7 @@ span {
 i {
   color: dodgerblue;
 }
+.navbar.navbar-expand-lg.float-md-right {
+font-family: cursive;
+}
 </style>
