@@ -11,7 +11,12 @@
  </div>
  <div class="category">
  <p>Click to remove category</p>
- <button class="btn btn-primary" @click="removecategory(cat.id,index)" v-for="(cat,index) in categories" :key="index" :name="cat" value="cat">{{cat.newcategory}}</button>
+
+ <button class="btn btn-primary" 
+ @click="removecategory(cat.id,index)" 
+ v-for="(cat,index) in categories" 
+ :key="index" :name="cat" value="cat"> {{cat.newcategory}} </button>
+ 
  </div>
  </div>
 </template>

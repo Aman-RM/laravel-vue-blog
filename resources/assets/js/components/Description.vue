@@ -27,9 +27,9 @@ export default {
     };
   },
   mounted() {
-    let self = this
+    let self = this;
     axios.get("/post/" + this.$route.params.id).then(function(response) {
-       console.log(response)
+      console.log(response);
       self.post = response.data;
     });
   }
@@ -58,7 +58,7 @@ ul {
 }
 a {
   float: left;
-  color:white;
+  color: white;
   text-decoration: none;
   padding: 8px;
 }

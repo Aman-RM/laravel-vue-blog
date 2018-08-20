@@ -52638,6 +52638,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "cat",
@@ -52760,7 +52765,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v(_vm._s(cat.newcategory))]
+            [_vm._v(" " + _vm._s(cat.newcategory) + " ")]
           )
         })
       ],
@@ -52813,7 +52818,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color:white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n  margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n  letter-spacing: 1px;\r\n  font-family: cursive;\r\n  text-indent: 30%;\r\n  font-size: 120%;\n}\ni[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.navbar.navbar-expand-lg.float-md-left[data-v-1404e455] {\r\n  font-family: cursive;\n}\r\n", ""]);
+exports.push([module.i, "\ndiv[data-v-1404e455] {\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\n.blog[data-v-1404e455] {\r\n  text-align: center;\r\n  font-family: cursive;\r\n  font-size: 400%;\r\n  color: white;\n}\nul[data-v-1404e455] {\r\n  margin-top: 5%;\r\n  background-color: whitesmoke;\r\n  opacity: 0.8;\r\n  border-radius: 15px;\n}\n.post-header[data-v-1404e455] {\r\n  font-family: cursive;\n}\na[data-v-1404e455] {\r\n  float: left;\r\n  color: white;\r\n  text-decoration: none;\r\n  padding: 8px;\n}\na[data-v-1404e455]:hover {\r\n  color: dodgerblue;\r\n  text-decoration: none;\n}\n.Add-post[data-v-1404e455] {\r\n  margin-right: 25%;\r\n  margin-left: 25%;\n}\n.float-md-right[data-v-1404e455] {\r\n  margin-top: 0;\n}\n.router-link-exact-active.router-link-active[data-v-1404e455] {\r\n  border-bottom: 3px solid dodgerblue;\n}\n.tabs[data-v-1404e455] {\r\n  padding: 15px;\r\n  margin-left: 36%;\n}\n.fab.fa-blogger-b[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.category[data-v-1404e455] {\r\n  margin-left: 20px;\n}\n.post-text[data-v-1404e455] {\r\n  letter-spacing: 1px;\r\n  font-family: cursive;\r\n  text-indent: 30%;\r\n  font-size: 120%;\n}\ni[data-v-1404e455] {\r\n  color: dodgerblue;\n}\n.navbar.navbar-expand-lg.float-md-left[data-v-1404e455] {\r\n  font-family: cursive;\n}\r\n", ""]);
 
 // exports
 
