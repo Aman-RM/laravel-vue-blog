@@ -23,7 +23,9 @@
    </div>
    <div class="category">
    <button class="btn btn-primary" name="category" @click="selectedCategory = 'All'" value="All">All</button>
-   <button class="btn btn-primary" v-for="(cat,index) in categories" :key="index" :name="cat" @click="selectedCategory = cat.newcategory" value="cat">{{cat.newcategory}}</button>
+   <button class="btn btn-primary" v-for="(cat,index) in categories" value="cat"
+   :key="index" :name="cat" 
+   @click="selectedCategory = cat.newcategory" >{{cat.newcategory}}</button>
    </div>
    <ul>
      <li class="title" v-for="(post,index) in posts" :key="index" v-if="isShow(post.category)">

@@ -51981,6 +51981,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Home",
@@ -52249,7 +52251,7 @@ var render = function() {
               {
                 key: index,
                 staticClass: "btn btn-primary",
-                attrs: { name: cat, value: "cat" },
+                attrs: { value: "cat", name: cat },
                 on: {
                   click: function($event) {
                     _vm.selectedCategory = cat.newcategory
